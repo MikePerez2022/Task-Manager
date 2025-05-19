@@ -12,6 +12,13 @@ A simple task management application written in C#. This project demonstrates th
 * Make into exe (future)
 * GUI interface
 
+## Design Patterns Overview
+
+This project uses the following software design patterns to promote clean, maintainable, and scalable architecture:
+
+Factory Pattern:
+Used to create different types of tasks (e.g., simple tasks, timed tasks, recurring tasks) without tightly coupling the code to specific classes. This makes it easy to extend the app with new task types in the future.
+
 ## Getting Started
 
 1. Clone this repository:
