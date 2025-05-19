@@ -1,6 +1,6 @@
 # Task Manager App
 
-A simple task management application written in C#. This project demonstrates the use of key software design patterns—**Factory**, **State**, and **Facade**—to build a flexible, extensible task tracking system. Users can add tasks, change their state, and manage them easily through a unified interface.
+A simple task management application written in C#. This project demonstrates the use of key software design patterns(**Factory**, **State**, and **Facade**)to build a flexible, extensible task tracking system. Users can add tasks, change their state, and manage them easily through a unified interface.
 
 ## Features Planned
 
