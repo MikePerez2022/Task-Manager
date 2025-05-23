@@ -19,6 +19,6 @@ namespace TaskManager.States
             Console.WriteLine("Cannot cancel a completed task.");
         }
 
-        public string GetStateName() => "Completed";
-    }
+        public string GetStateName() { return "Completed"; }
+}
 }

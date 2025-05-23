@@ -4,24 +4,23 @@ namespace TaskManager.States
 {
     class InProgressState : ITaskState
     {
-        public void Cancel(Task task)
+        public void Start(Task task)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Task is already in progress.");
         }
 
         public void Complete(Task task)
         {
-            throw new NotImplementedException();
+            task.SetState(new CompletedState());
+            Console.WriteLine("Task completed.");
         }
 
-        public string GetStateName()
+        public void Cancel(Task task)
         {
-            throw new NotImplementedException();
+            task.SetState(new CanceledState());
+            Console.WriteLine("Task canceled.");
         }
 
-        public void Start(Task task)
-        {
-            throw new NotImplementedException();
-        }
-    }
+        public string GetStateName() { return "In Progress"; }
+}
 }
