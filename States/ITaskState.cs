@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Task = TaskManager.Models.Task;
 
 namespace TaskManager.States
 {
     interface ITaskState
     {
+        void Start(Task task);
+        void Complete(Task task);
+        void Cancel(Task task);
+        string GetStateName();
     }
 }
