@@ -19,6 +19,9 @@ This project uses the following software design patterns to promote clean, maint
 Factory Pattern:
 Used to create different types of tasks (e.g., simple tasks, timed tasks, recurring tasks) without tightly coupling the code to specific classes. This makes it easy to extend the app with new task types in the future.
 
+State Pattern:
+Implements a flexible task lifecycle by allowing each task to change its behavior based on its current state. Tasks transition between states such as New, InProgress, and Completed. Each state encapsulates its behavior and knows how to transition to the next valid state. This separation ensures tasks are easy to extend or modify without modifying a central task controller.
+
 ## Getting Started
 
 1. Clone this repository:
