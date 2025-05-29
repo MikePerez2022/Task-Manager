@@ -20,9 +20,24 @@ namespace TaskManager.Models
             taskState = newState;
         }
 
-        public void Start() { taskState.Start(this); }
-        public void Complete() { taskState.Complete(this); }
-        public void Cancel() { taskState.Cancel(this); }
-        public string GetState() { return taskState.GetStateName(); }
+        public void Start()
+        {
+            taskState.Start(this);
+        }
+
+        public void Complete()
+        {
+            taskState.Complete(this);
+        }
+
+        public void Cancel()
+        {
+            taskState.Cancel(this);
+        }
+
+        public string GetState()
+        {
+            return taskState.GetStateName();
+        }
     }
 }
