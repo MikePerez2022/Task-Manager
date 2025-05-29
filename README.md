@@ -10,7 +10,7 @@ A simple task management application written in C#. This project demonstrates th
 * Save and load tasks from file (future)
 * Task filtering and sorting (future)
 * Make into exe (future)
-* GUI interface
+* GUI interface (future)
 
 ## Design Patterns Overview
 
